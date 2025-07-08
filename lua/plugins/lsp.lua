@@ -232,28 +232,7 @@ return {
                 --
                 -- But for many setups, the LSP (`ts_ls`) will work just fine
                 -- ts_ls = {},
-                phpactor = {},
-                dockerls = {},
-                html = { filetypes = { "html", "twig", "hbs" } },
-                cssls = {},
-                sqlls = {},
-                jsonls = {},
-                yamlls = {},
-                --
-                lua_ls = {
-                    -- cmd = { ... },
-                    -- filetypes = { ... },
-                    -- capabilities = {},
-                    settings = {
-                        Lua = {
-                            completion = {
-                                callSnippet = "Replace",
-                            },
-                            -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-                            -- diagnostics = { disable = { 'missing-fields' } },
-                        },
-                    },
-                },
+                intelephense = {},
             },
             -- This table contains config for all language servers that are *not* installed via Mason.
             -- Structure is identical to the mason table from above.
