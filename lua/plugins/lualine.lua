@@ -74,10 +74,6 @@ return {
       cond = hide_in_width,
     }
 
-    local time = function()
-        return os.date('%H:%M')
-    end
-
     local diff = {
       'diff',
       colored = false,
@@ -101,7 +97,7 @@ return {
         lualine_a = { mode },
         lualine_b = { 'branch' },
         lualine_c = { filename },
-        lualine_x = { time, diagnostics, diff, { 'encoding', cond = hide_in_width }, { 'filetype', cond = hide_in_width } },
+        lualine_x = { diagnostics, diff, { 'encoding', cond = hide_in_width }, { 'filetype', cond = hide_in_width } },
         lualine_y = { 'location' },
         lualine_z = { 'progress' },
       },
